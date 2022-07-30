@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(32) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `pass` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `u_f` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `zag` varchar(32) NOT NULL,
+  `Author` varchar(32) NOT NULL,
+  `Stext` varchar(32) NOT NULL,
+  `text` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `user_comets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(32) NOT NULL,
+  `coment` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
